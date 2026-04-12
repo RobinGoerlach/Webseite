@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<head>
+	<title>Robin Görlach</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Robin G&ouml;rlach Resume Lebenslauf CV">
+	<meta name="author" content="Robin G&ouml;rlach">
+
+	<!-- CSS -->
+	<link href="./assets/css/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="./assets/css/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="./assets/css/main.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="./assets/ico/favicon.png">
+
+</head>
+<body id="top" data-spy="scroll" data-target="#main-nav">
+	<!-- WRAPPER -->
+	<div class="wrapper">
+
+		<!-- MAIN NAVIGATION -->
+		<nav class="navbar navbar-default" id="main-nav" role="navigation">
+			<div class="container">
+				<!-- brand and toggle -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav-collapse">
+						<span class="sr-only">Navigation</span>
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+
+				<!-- navigation links -->
+				<div class="collapse navbar-collapse main-nav-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html#top">HOME</a></li>
+						<li><a href="index.html#about-me">ÜBER MICH</a></li>
+						<li><a href="index.html#resume">LEBENSLAUF</a></li>
+						<li><a href="index.html#projects">PROJEKTE</a></li>
+						<li><a href="index.html#contacts">KONTAKT</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END MAIN NAVIGATION -->
+
+		<!-- HEADER -->
+		<header class="hero-unit header" id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 left">
+						<div class="avatar">
+							<img src="./assets/img/Robin&#32;G&ouml;rlach&#32;310243_445x445.jpg" class="img-responsive" alt="Profile Picture" />
+						</div>
+					</div>
+					<div class="col-md-6 right">
+						<h1 class="hide">Robin G&ouml;rlach</h1>
+						<h2 class="heading">HALLO,</h2>
+						<p>ich bin Robin, leidenschaftlicher Anwendungsentwickler.</p>
+						<a href="index.html#about-me" class="btn btn-default btn-lg">MEHR</a><a href="./vCard.vcf" class="btn btn-primary btn-lg">vCARD HERUNTERLADEN</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- END HEADER -->
+
+		<!-- ABOUT ME -->
+		<section class="section about-me" id="about-me">
+			<div class="container">
+				<h2 class="heading">ÜBER MICH</h2>
+				<p>Mit mehr als drei&suml;ig Jahren in der IT habe ich umfassende Erfahrungen in der Analyse, der Entwicklung, das Testen und den Betrieb von Anwendungen in vielen Programmiersprachen und auf unterschiedlichen Platformen vorzuweisen.</p>
+				<p>Besonders hervorzuheben sind meine Erfahrungen in der Entwickling von Rich Internet Applications im Enterprise-Umfeld und meine Erfahrungen mit agiler Softwareentwicklung in der Praxis.</p>
+				<div class="row interest">
+					<div class="col-md-3">
+						<h3 class="sub-heading"><span class="glyphicon glyphicon-cloud"></span> Enterprise</h3>
+						<p>Eine Enterprise-Umgebung stellt höhere Anforderungen an Wartbarkeit und Lesbarkeit vom Quellcode, da Anwendungen über Jahre hinweg genutzt und gepflegt werden. In meiner Arbeit habe ich diese Anforderungen immer im Blick.</p>
+					</div>
+					<div class="col-md-3">
+						<h3 class="sub-heading"><span class="glyphicon glyphicon-film"></span> Rich Internet</h3>
+						<p>Anwender erwarten das Web-Anwendungen sich wie native Anwendungen verhalten. Ich habe bereits viele Rich Internet Applications gebaut und kenne die Fallstricken und Lösungenswege.</p>
+					</div>
+					<div class="col-md-3">
+						<h3 class="sub-heading"><span class="glyphicon glyphicon-refresh"></span> Agile</h3>
+						<p>Viele Projekte wollen von agilen Prozessen profitieren. Ich weiß wie diese Prozesse eingeführt werden können und wie man dies auch in einem nicht-agilen Umfeld erfolgreich umsetzen kann.</p>
+					</div>
+					<div class="col-md-3">
+						<h3 class="sub-heading"><span class="glyphicon glyphicon-duplicate"></span> Open Source</h3>
+						<p>Keine Anwendung wird mehr ohne Hilfe von Projekten aus der Open Source-Community gebaut. Ich bin ein aktiver Teil dieser Gemeinschaft indem ich an verschiedene Projekte mitarbeite und meine eigene Projekte zur Verfügung stelle.</p>
+					</div>
+				</div>
+				<div class="social">
+					<h3 class="sub-heading">Folge mir auf:</h3>
+					<ul class="social-icons">
+						<li><a href="https://github.com/RobinGoerlach"><i class="fa fa-github" title="GitHub"></i></a></li>
+						<li><a href="https://stackoverflow.com/users/5277286/robin-goerlach" title="Stack Overflow"><i class="fa fa-stack-overflow"></i></a></li>
+						<li><a href="https://bitbucket.org/robingoerlach/" title="Bitbucket"><i class="fa fa-bitbucket"></i></a></li>
+						<li><a href="https://www.xing.com/profile/Robin_Goerlach/" title="Xing"><i class="fa fa-xing"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/robin-goerlach/" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- END ABOUT ME -->
+
+		<!-- SKILLS -->
+		<section class="section skills" id="skills">
+			<div class="container">
+				<h2 class="heading sr-only">SKILLS</h2>
+				<div class="row">
+					<div class="col-md-12"><img src="./assets/img/ajax-loader.gif" class="center-block"></img>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END SKILLS -->
+
+		<!-- RESUME -->
+		<section class="section resume" id="resume">
+			<div class="container">
+				<h2 class="heading">LEBENSLAUF</h2>
+                <img src="./assets/img/ajax-loader.gif" class="center-block"></img>
+				<ul class="timeline">
+				</ul>
+			</div>
+		</section>
+		<!-- END RESUME -->
+
+		<!-- PROJECTS -->
+		<section class="section projects" id="projects">
+			<div class="container">
+				<h2 class="heading">PROJEKTE</h2>
+				<p class="copy-text">Eine Auswahl aus meine eigenen Freizeitprojekte.</p>
+				<div class="row project-list">
+					<ul class="project-grid project-effect-shrink">
+						<li class="col-md-6">
+							<figure>
+								<img src="./assets/img/projects/project-item1.png" alt="Azei"/>
+								<figcaption>
+									<div class="project-item-info">
+										<h3 class="sub-heading">Azei</h3>
+										<p>Ein Plugin für Azureus, das einem ermöglicht Azureus mit Schlüsselwörter per Email zu bedienen. Programmiert in Java.</p>
+										<a href="https://github.com/sonata82/Azei" class="btn btn-default">Quellcode</a>
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li class="col-md-6">
+							<figure>
+								<img src="./assets/img/projects/project-item2.png" alt="ShopShopViewer"/>
+								<figcaption>
+									<div class="project-item-info">
+										<h3 class="sub-heading">ShopShopViewer</h3>
+										<p>Eine Android-Anwendung die ShopShop-Dateien anzeigt. Programmiert in Java für Android, nutzt es die Dropbox API um auf die Daten zu zugreifen.</p>
+										<a href="https://github.com/sonata82/ShopShopViewer" class="btn btn-default">Quellcode</a>
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- END PROJECTS -->
+
+		<!-- CONTACTS -->
+		<section class="section contacts" id="contacts">
+			<div class="container">
+				<h2 class="heading">KONTAKT</h2>
+				<div class="row contact-address">
+					<div class="col-md-6">
+						<div class="contact-form-wrapper margin-bottom">
+							<p>Wenn Sie kontakt mit mir aufnehmen möchten, können Sie das folgende Formular verwenden:</p>
+							<form id="contact-form" class="form-horizontal contact-form" method="post" role="form" novalidate>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="contact-name" class="control-label sr-only">Name</label>
+											<input type="text" class="form-control" id="contact-name" name="name" placeholder="Name*" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="contact-email" class="control-label sr-only">Email</label>
+											<input type="email" class="form-control" id="contact-email" name="email" placeholder="Email*" data-parsley-trigger="focusin focusout" required>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="contact-subject" class="control-label sr-only">Betreff</label>
+									<div class="col-sm-12">
+										<input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Betreff">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="contact-message" class="control-label sr-only">Nachricht</label>
+									<div class="col-sm-12">
+										<textarea class="form-control" id="contact-message" name="message" rows="5" cols="30" placeholder="Nachricht*" required></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<button id="submit-button" type="submit" class="btn btn-primary"><i class="fa loading-icon"></i> <span>Abschicken</span></button>
+									</div>
+								</div>
+								<input type="hidden" name="msg-submitted" id="msg-submitted" value="true">
+							</form>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<p>Folgende Informationen verstehen sich als Hinweis entsprechend des Telemediengesetz zur Anbieterkennung, ebenfalls als Impressum und können zur Kontaktaufnahme mit mir genutzt werden.</p>
+						<div class="address-lines">
+							<p>Robin G&ouml;rlach</p>
+							<p>Feldstraße 2</p>
+							<p>47533 Kleve</p>
+							<p>Email: <a href="mailto:info@rgo.de">info@rgo.de</a></p>
+						</div>
+						<p>Ich widerspreche der Nutzung oder Übermittlung meiner Daten zur Zwecke der Werbung oder der Markt- oder Meinungsforschung sowie der kommerziellen Verwendung und Weitergabe (§ 28 Abs. 4 Bundesdatensschutzgesetz).</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END CONTACTS -->
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<p>Copyright &copy; 2024 Robin G&ouml;rlach</p>
+		</footer>
+		<!-- END FOOTER -->
+
+	</div>
+	<!-- END WRAPPER -->
+
+	<!-- JAVASCRIPT -->
+	<script src="./assets/js/jquery-2.1.1.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/plugins/scrolling/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="./assets/js/plugins/scrolling/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="./assets/js/plugins/parsley/parsley.min.js"></script>
+	<script src="./assets/js/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script>
+	<script src="./assets/js/plugins/jquery-easypiechart/jquery.easypiechart.min.js"></script>
+    <script src="./assets/js/d3.js"></script>
+    <script src="./assets/js/d3.layout.cloud.js"></script>
+    <script src="./assets/js/jsrender.min.js"></script>
+	<script src="./assets/js/main.js"></script>
+
+    <script id="resumeTemplate" type="text/x-jsrender">
+        <li class="year">{{:year}}</li>
+        {{for data}}
+        <li class="event">
+            <h3 class="heading">{{:title}}</h3>
+            <span class="month"><i class="fa fa-calendar"></i>{{humandate:beginDate}} - {{humandate:endDate}}</span>
+            <p>{{:description}}</p>
+        </li>
+        {{/for}}
+    </script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Robin Görlach Resume Lebenslauf CV" />
+    <meta name="author" content="Robin Görlach" />
+    <title>Robin Görlach</title>
+    <link
+      href="./assets/css/style.css"
+      media="screen, projection"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/ico/favicon.png" />
+    <style>
+      /* Zusätzliche CSS für moderne Effekte */
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .hero-overlay {
+        background: rgba(0, 0, 0, 0.4); /* Overlay für besseren Kontrast */
+      }
+      nav {
+        background: rgba(0, 43, 91, 0.8);
+        transition: background 0.3s ease;
+      }
+      .scrolled {
+        background: rgba(0, 43, 91, 1);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full p-4 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <button type="button" class="text-white focus:outline-none">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="hidden md:flex space-x-4">
+          <a href="#top" class="text-white hover:text-blue-400">HOME</a>
+          <a href="#about-me" class="text-white hover:text-blue-400"
+            >ÜBER MICH</a
+          >
+          <a href="#resume" class="text-white hover:text-blue-400"
+            >LEBENSLAUF</a
+          >
+          <a href="#projects" class="text-white hover:text-blue-400"
+            >PROJEKTE</a
+          >
+          <a href="#contacts" class="text-white hover:text-blue-400">KONTAKT</a>
+          <a
+            href="index.en.html"
+            class="text-white hover:text-blue-400"
+            title="English"
+          >
+            <img
+              src="./assets/ico/uk-flag-icon.png"
+              alt="EN"
+              class="w-6 h-6 inline"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header-Bereich -->
+    <header class="bg-blue-900 text-white py-16" id="header">
+      <div class="container mx-auto flex flex-col items-center text-center">
+        <!-- Avatar mit rundem Rahmen -->
+        <div
+          class="avatar-container mb-8 flex justify-center items-center rounded-full border-8 border-gray-200 p-2 shadow-lg"
+        >
+          <!-- Profilbild -->
+          <img
+            src="./assets/img/avatar.jpg"
+            alt="Profile Picture"
+            class="w-32 h-32 rounded-full"
+          />
+        </div>
+
+        <!-- Begrüßung und Einführung -->
+        <div>
+          <h1 class="text-4xl font-bold mb-4">Hallo, ich bin Robin Görlach</h1>
+          <p class="text-xl mb-4">
+            Leidenschaftlicher Anwendungsentwickler mit über 30 Jahren Erfahrung
+            in der IT.
+          </p>
+
+          <!-- Button-Gruppe -->
+          <div class="flex justify-center space-x-4">
+            <a
+              href="#about-me"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Mehr über mich
+            </a>
+            <a
+              href="path/to/vCard.vcf"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              vCard herunterladen
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="bg-blue-100 py-16" id="about-me">
+      <div class="container mx-auto text-center md:text-left">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">ÜBER MICH</h2>
+        <p>
+          Mit über drei Jahrzehnten Erfahrung in der IT-Welt biete ich ein
+          breites Spektrum an Fachwissen in der Analyse, Entwicklung, dem Testen
+          und dem Betrieb komplexer Anwendungen in unterschiedlichen
+          Programmiersprachen und auf verschiedenen Plattformen.
+        </p>
+        <p class="mt-2">
+          Mein Schwerpunkt liegt in der Entwicklung von Rich Internet
+          Applications für das Enterprise-Umfeld, wobei ich hohe Ansprüche an
+          Skalierbarkeit, Wartbarkeit und Benutzerfreundlichkeit setze. Zudem
+          bringe ich fundierte Kenntnisse in agiler Softwareentwicklung mit, die
+          ich erfolgreich in zahlreichen Projekten anwenden konnte. Meine
+          Leidenschaft gilt besonders Open-Source-Technologien und der
+          Optimierung von Linux-Systemen, wo ich tiefgreifende Expertise als
+          Systemadministrator einbringe.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+          <div>
+            <h3 class="text-lg font-semibold">
+              <i class="fas fa-cloud mr-2"></i> Enterprise
+            </h3>
+            <p class="mt-2">
+              In einer Enterprise-Umgebung sind Wartbarkeit, Skalierbarkeit und
+              Lesbarkeit des Codes entscheidend. Meine Expertise umfasst die
+              Einrichtung und Verwaltung robuster Linux-Server-Umgebungen und
+              die Implementierung von DevOps-Praktiken, um Prozesse zu
+              optimieren und kontinuierliche Integration und Bereitstellung
+              (CI/CD) zu gewährleisten. Dabei sorge ich dafür, dass Systeme
+              nicht nur effizient, sondern auch zuverlässig und sicher arbeiten
+              zentrale Anforderungen in jeder modernen IT-Infrastruktur.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">
+              <i class="fas fa-laptop mr-2"></i> Rich Internet
+            </h3>
+            <p class="mt-2">
+              Moderne Web-Anwendungen sollen den Komfort und die Funktionalität
+              nativer Desktop-Anwendungen bieten - diese Herausforderung habe
+              ich erfolgreich in vielen Projekten gemeistert. Durch meine
+              langjährige Erfahrung in der Entwicklung intuitiver
+              Benutzeroberflächen und interaktiver Anwendungen verstehe ich die
+              hohen Anforderungen an Performance, Skalierbarkeit und
+              Benutzerfreundlichkeit. Ich arbeite daran, das Beste aus beiden
+              Welten zu vereinen: die Flexibilität des Webs und die
+              Leistungsfähigkeit klassischer Desktop-Anwendungen.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">
+              <i class="fas fa-sync-alt mr-2"></i> Agile
+            </h3>
+            <p class="mt-2">
+              Agile Prozesse sind der Schlüssel zu flexiblen, anpassungsfähigen
+              Projekten, die schnell auf Veränderungen reagieren können. Durch
+              meine Erfahrung in der Einführung und Umsetzung agiler Methoden
+              wie Scrum und Kanban weiß ich, wie man Teams effizient organisiert
+              und den Projektfortschritt kontinuierlich verbessert. Ich
+              unterstütze dabei, eine agile Kultur zu schaffen, die
+              Kommunikation fördert, den Fokus auf Kundenanforderungen legt und
+              schnelle, iterative Ergebnisse ermöglicht. So gelingt es, Projekte
+              zielgerichtet und erfolgreich zum Abschluss zu bringen.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">
+              <i class="fas fa-code-branch mr-2"></i> Open Source
+            </h3>
+            <p>
+              Als aktiver Teil der Open-Source-Community leiste ich regelmäßig
+              Beiträge zu verschiedenen Projekten und unterstütze den
+              Wissensaustausch durch meine Arbeit. Neben der Entwicklung und
+              Verbesserung von Open-Source-Software schreibe ich auch Artikel
+              auf Wikipedia, um mein Wissen mit einer breiten Öffentlichkeit zu
+              teilen und zur freien Verfügbarkeit von Informationen beizutragen.
+              Für mich ist Open Source nicht nur eine Methode, sondern eine
+              Philosophie der Zusammenarbeit und Transparenz, die ich mit
+              Begeisterung unterstütze.
+            </p>
+          </div>
+        </div>
+        <div class="mt-8">
+          <h3 class="text-lg font-semibold">Folge mir auf:</h3>
+          <div class="flex justify-center space-x-4 mt-4">
+            <a href="https://github.com/RobinGoerlach" class="relative group">
+              <i class="fab fa-github text-2xl text-blue-800"></i>
+              <span class="tooltip">GitHub</span>
+            </a>
+            <a
+              href="https://stackoverflow.com/users/5277286/robin-goerlach"
+              class="relative group"
+            >
+              <i class="fab fa-stack-overflow text-2xl text-blue-800"></i>
+              <span class="tooltip">Stack Overflow</span>
+            </a>
+            <a
+              href="https://bitbucket.org/robingoerlach/"
+              class="relative group"
+            >
+              <i class="fab fa-bitbucket text-2xl text-blue-800"></i>
+              <span class="tooltip">Bitbucket</span>
+            </a>
+            <a
+              href="https://www.xing.com/profile/Robin_Goerlach/"
+              class="relative group"
+            >
+              <i class="fab fa-xing text-2xl text-blue-800"></i>
+              <span class="tooltip">Xing</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/robin-goerlach/"
+              class="relative group"
+            >
+              <i class="fab fa-linkedin text-2xl text-blue-800"></i>
+              <span class="tooltip">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fähigkeiten Abschnitt -->
+    <section class="bg-gray-100 py-16" id="skills">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">
+          Softwareentwicklung
+        </h2>
+        <p class="mb-8">
+          Hier sind einige der Technologien und Themen, die mich bewegen.
+        </p>
+        <p class="mt-8 text-gray-800 text-left">
+          Die IT-Welt entwickelt sich ständig weiter, und ich finde es faszinierend, wie Technologie genutzt werden kann, um kreative und nachhaltige Lösungen zu schaffen. Meine Arbeit konzentriert sich auf verschiedene Bereiche:
+          <ul class="list-disc list-inside text-left">
+            <li><b>Webentwicklung:</b> Ich setze auf moderne Webtechnologien wie HTML, CSS, JavaScript und React, um leistungsstarke und ansprechende Benutzeroberflächen zu erstellen. Tailwind CSS hilft mir, saubere und intuitive Designs effizient umzusetzen.</li>
+            <li><b>Backend-Entwicklung:</b> Mit Node.js, Express und Datenbanksystemen wie MySQL und MongoDB schaffe ich zuverlässige Backend-Strukturen, die auf Skalierbarkeit und Performance ausgerichtet sind.</li>
+            <li><b>Softwarearchitektur und Systemintegration:</b> Mein Ziel ist es, Anwendungen so zu gestalten, dass sie stabil und wartbar bleiben. Ich beschäftige mich intensiv mit den Prinzipien, die hinter skalierbaren Systemen stehen, und arbeite an der nahtlosen Integration von Softwarekomponenten in bestehende IT-Umgebungen.</li>
+          </ul>
+        </p>
+        <p class="text-left">
+          Zusätzlich interessiere ich mich für neue Ansätze und Best Practices in der Entwicklung, um aktuelle Trends wie <span class="font-semibold">nachhaltige IT</span> und <span class="font-semibold">Open Source</span> sinnvoll in meine Arbeit zu integrieren. Diese Themen treiben mich an und inspirieren mich, beständig weiterzulernen.
+        </p>
+        <br />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="skill-card p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Webentwicklung</h3>
+            <p>HTML, CSS, JavaScript, React, Tailwind CSS</p>
+          </div>
+          <div class="skill-card p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Backend-Entwicklung</h3>
+            <p>Node.js, Express, MySQL, MongoDB</p>
+          </div>
+          <div class="skill-card p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Softwarearchitektur</h3>
+            <p>Entwurf skalierbarer und wartbarer Anwendungen</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kundenmeinungen Abschnitt -->
+    <section class="bg-blue-50 py-16" id="testimonials">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">
+          Linux-Administration
+        </h2>
+        <p class="mb-8">Erfahrungen in der Linux-Administration.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="testimonial-card p-6 bg-white rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4">
+              Installation und Betrieb von Linux Netzen!
+            </p>
+            <p class="text-blue-800 font-semibold">– mehr erfahren ...</p>
+          </div>
+          <div class="testimonial-card p-6 bg-white rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4">Cybersecurity!</p>
+            <p class="text-blue-800 font-semibold">– mehr lesen ...</p>
+          </div>
+        </div>
+        <p class="text-left">
+        Mit jahrelanger Erfahrung in der Installation, Verwaltung und Optimierung von Linux-basierten Netzwerken biete ich umfangreiche Kenntnisse, um Netzwerke effizient, sicher und zukunftssicher zu gestalten. Zwei zentrale Schwerpunkte meiner Arbeit sind dabei:
+      </p> <ul><li>
+Installation und Betrieb von Linux-Netzen: Vom Aufbau neuer Serverstrukturen bis zur Verwaltung bestehender Netzwerke – ich kümmere mich um die Konfiguration und den stabilen Betrieb von Linux-Systemen. Dabei setze ich auf skalierbare Lösungen, die sich den Anforderungen des Unternehmens flexibel anpassen lassen und die Effizienz der IT-Infrastruktur verbessern.
+</li><li>
+Cybersecurity: Die Sicherheit der Systeme ist für mich nicht nur ein technisches Ziel, sondern eine grundlegende Verantwortung. Durch die Implementierung von Sicherheitsprotokollen und den Einsatz von Tools zur Netzwerküberwachung schütze ich Linux-Netzwerke proaktiv vor Bedrohungen. Neben Firewalls und Zugriffskontrollen arbeite ich regelmäßig an der Optimierung der Systemhärtung, um Schwachstellen zu minimieren und eine robuste Cybersecurity zu gewährleisten.
+</li>
+Diese Kombination aus leistungsfähigem Netzwerkmanagement und fundierter Cybersecurity ermöglicht es mir, zuverlässige, sichere und effiziente Linux-Umgebungen für verschiedenste Anforderungen zu schaffen.
+</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-white py-16" id="projects">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">PROJEKTE</h2>
+        <p class="mb-8">Eine Auswahl aus meinen eigenen Freizeitprojekten.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Projekt Azei -->
+          <div class="card p-6">
+            <img
+              id="azei-image"
+              src="./assets/img/projects/azei1.png"
+              alt="Azei"
+              class="rounded-t mb-4"
+            />
+            <h3 class="text-xl font-semibold">Azei</h3>
+            <p class="text-gray-700">
+              Ein Plugin für Azureus, das einem ermöglicht, Azureus mit
+              Schlüsselwörtern per E-Mail zu bedienen. Programmiert in Java.
+            </p>
+            <a
+              href="https://github.com/sonata82/Azei"
+              class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >Quellcode</a
+            >
+          </div>
+          <!-- Projekt ShopShopViewer -->
+          <div class="card p-6">
+            <img
+              id="shopshopviewer-image"
+              src="./assets/img/projects/shopshopviewer1.png"
+              alt="ShopShopViewer"
+              class="rounded-t mb-4"
+            />
+            <h3 class="text-xl font-semibold">ShopShopViewer</h3>
+            <p class="text-gray-700">
+              Eine Android-Anwendung, die ShopShop-Dateien anzeigt. Programmiert
+              in Java für Android, nutzt die Dropbox API.
+            </p>
+            <a
+              href="https://github.com/sonata82/ShopShopViewer"
+              class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >Quellcode</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -->
+    <section class="bg-blue-100 py-16" id="personal-motivation">
+      <div class="container mx-auto px-4 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">
+          Persönliche Motivation und Ziele
+        </h2>
+        <p class="text-gray-800 mb-4">
+          Die Welt der IT begeistert mich seit Jahrzehnten – für mich bedeutet
+          sie nicht nur technisches Arbeiten, sondern auch die Chance,
+          <span class="font-semibold"
+            >komplexe Herausforderungen zu meistern</span
+          >
+          und nachhaltige, nützliche Lösungen zu entwickeln. Besonders
+          fasziniert mich die Möglichkeit, durch meine Arbeit echte Mehrwerte zu
+          schaffen, sei es in Form stabiler Serverumgebungen oder
+          benutzerfreundlicher Anwendungen.
+        </p>
+        <p class="text-gray-800 mb-4">
+          Als Entwickler und Administrator sehe ich es als meine Aufgabe, nicht
+          nur technischen Anforderungen gerecht zu werden, sondern auch die
+          <span class="font-semibold">
+            Zusammenarbeit und den Wissensaustausch</span
+          >
+          in Projekten zu fördern. Diese Überzeugung treibt mich täglich an und
+          gibt mir den Anreiz, meine Fähigkeiten kontinuierlich
+          weiterzuentwickeln und mein Wissen mit anderen zu teilen.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white py-16" id="career-journey">
+      <div class="container mx-auto px-4 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">Berufliche Reise</h2>
+        <p class="text-gray-800 mb-4">
+          Meine Reise in der IT begann vor über drei Jahrzehnten, und seitdem
+          habe ich eine Vielzahl an Projekten und Technologien erlebt. Mit einem
+          Hintergrund in
+          <span class="font-semibold"> Mathematik und Softwareentwicklung</span>
+          startete ich in einer Zeit, in der IT noch in den Kinderschuhen
+          steckte, und konnte von Beginn an beobachten, wie rasant sich die
+          Technologie entwickelt.
+        </p>
+        <p class="text-gray-800 mb-4">
+          Im Laufe meiner Karriere habe ich mich auf
+          <span class="font-semibold"
+            >skalierbare, robuste Softwarelösungen</span
+          >
+          spezialisiert und dabei den Einsatz von Open Source-Technologien stets
+          als unverzichtbaren Bestandteil meiner Arbeit gesehen. Besonders stolz
+          bin ich auf meine Fähigkeit, in
+          <span class="font-semibold">heterogenen Systemumgebungen</span> zu
+          arbeiten und dabei beständig hohe Standards für Sicherheit und
+          Effizienz zu gewährleisten.
+        </p>
+        <p class="text-gray-800">
+          Neben der technischen Expertise habe ich auch gelernt, wie wichtig
+          <span class="font-semibold"> agile Methoden</span> und ein
+          <span class="font-semibold">teamorientiertes Arbeiten</span> sind, um
+          komplexe Projekte erfolgreich abzuschließen. Diese Erfahrungen haben
+          mich gelehrt, flexibel zu bleiben und kontinuierlich Neues zu lernen –
+          Fähigkeiten, die gerade in der heutigen IT-Welt entscheidend sind.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-blue-100 py-16" id="values-principles">
+      <div class="container mx-auto px-4 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">
+          Werte und Prinzipien
+        </h2>
+        <p class="text-gray-800 mb-4">
+          Für mich ist IT mehr als nur Technik – es ist eine Philosophie. Seit
+          über drei Jahrzehnten habe ich erlebt, wie Technologien unser Leben
+          beeinflussen und verändern können. Dabei ist für mich
+          <span class="font-semibold">Open Source</span> zu einer zentralen
+          Überzeugung geworden. Ich glaube daran, dass Wissen und Werkzeuge
+          allen frei zugänglich sein sollten, um Innovation zu fördern und eine
+          faire, transparente digitale Welt zu gestalten.
+        </p>
+        <p class="text-gray-800 mb-4">
+          Als <span class="font-semibold">Linux-Systemadministrator</span> und
+          <span class="font-semibold"> Fullstack-Entwickler</span> setze ich
+          alles daran, Systeme so zu gestalten, dass sie effizient, sicher und
+          leicht wartbar sind. Die Sicherheit und Zuverlässigkeit der Systeme,
+          die ich betreue, sind dabei nicht verhandelbar – sie sind mein
+          persönlicher Anspruch an Qualität.
+        </p>
+        <p class="text-gray-800">
+          Nachhaltigkeit und Innovation gehen für mich Hand in Hand: Durch die
+          Auswahl und Implementierung skalierbarer, ressourcenschonender
+          Technologien leiste ich meinen Beitrag für zukunftssichere und
+          umweltbewusste IT. In meinen Projekten strebe ich stets nach einer
+          Balance zwischen technischer Eleganz und praktischem Nutzen, die das
+          Arbeiten für Kunden und Anwender so angenehm wie möglich macht.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white py-16" id="technological-interests">
+      <div class="container mx-auto px-4 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">
+          Technologische Interessen und Spezialisierungen
+        </h2>
+        <p class="text-gray-800 mb-4">
+          Mein technologischer Fokus liegt auf
+          <span class="font-semibold">Linux-Administration</span> und der
+          Entwicklung von
+          <span class="font-semibold">stabilen, skalierbaren Anwendungen</span>.
+          Mit tiefem Wissen in Sprachen wie C#, Java und C++ und Erfahrungen im
+          Umgang mit MySQL sowie Microsoft SQL verstehe ich, wie wichtig es ist,
+          effiziente und wartbare Softwarelösungen zu entwickeln.
+        </p>
+        <p class="text-gray-800 mb-4">
+          Neben meiner Entwicklungserfahrung arbeite ich auch aktiv an der
+          Optimierung von Serverumgebungen und Netzwerken. Von der virtuellen
+          Infrastruktur über Proxmox bis hin zu modernen Backup-Lösungen und
+          OpenVPN -Know-how – ich sorge dafür, dass IT-Infrastrukturen nicht nur
+          leistungsfähig, sondern auch sicher sind.
+        </p>
+        <p class="text-gray-800">
+          Meine Philosophie in der Technologieentwicklung basiert auf sauberem,
+          wartbarem Code und stetigem Lernen. Gerade deshalb bilde ich mich
+          ständig weiter, aktuell in den Bereichen TypeScript, Docker, und
+          neuerdings JavaScript. Dabei ist mir bewusst, dass Software nie
+          „fertig“ ist und regelmäßiges Refactoring entscheidend ist, um
+          effiziente und saubere Strukturen zu gewährleisten.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-blue-100 py-16" id="contacts">
+      <div class="container mx-auto px-4 text-center">
+        <!-- Überschrift über beiden Spalten -->
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">KONTAKT</h2>
+        <p class="mb-8">
+          Wenn Sie Kontakt mit mir aufnehmen möchten, können Sie das folgende
+          Formular verwenden:
+        </p>
+      </div>
+
+      <div class="container mx-auto px-4 md:flex md:space-x-8">
+        <!-- Kontaktformular -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <form class="space-y-4 bg-white p-6 rounded-lg shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="Name*"
+                class="p-2 border border-gray-300 rounded"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email*"
+                class="p-2 border border-gray-300 rounded"
+                required
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Betreff"
+              class="p-2 border border-gray-300 rounded w-full"
+            />
+            <textarea
+              placeholder="Nachricht*"
+              class="p-2 border border-gray-300 rounded w-full"
+              rows="5"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-700"
+            >
+              Abschicken
+            </button>
+          </form>
+        </div>
+
+        <!-- Kontaktinformationen -->
+        <div class="md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
+          <h3 class="text-2xl font-semibold text-blue-800 mb-4">
+            Kontaktinformationen
+          </h3>
+          <p class="mb-2"><strong>Robin Görlach</strong></p>
+          <p class="mb-2">Feldstraße 2</p>
+          <p class="mb-2">47533 Kleve</p>
+          <p class="mb-2">Deutschland</p>
+          <p class="mt-4 mb-2">
+            <strong>Email:</strong>
+            <a
+              href="mailto:info@rgo.me.uk"
+              class="text-blue-500 hover:text-blue-700"
+              >info@rgo.me.uk</a
+            >
+          </p>
+          <p class="mb-2">
+            <strong>Telefon:</strong> <span>+49 123 456 789</span>
+          </p>
+          <p class="mt-8 text-sm text-gray-600">
+            Ich widerspreche der Nutzung oder Übermittlung meiner Daten zur
+            Zwecke der Werbung oder der Markt- oder Meinungsforschung sowie der
+            kommerziellen Verwendung und Weitergabe (§ 28 Abs. 4
+            Bundesdatenschutzgesetz).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+      <p class="text-sm">&copy; 2024 Robin Görlach</p>
+    </footer>
+
+    <!-- JavaScript (Scroll-Effekt und Navigation) -->
+    <script src="./assets/js/jquery-2.1.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Burger Menu Toggle
+        $(".fa-bars").on("click", function () {
+          $("#main-nav div.hidden").toggleClass("hidden");
+        });
+
+        // Scroll-Background für Navigation
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            $("#main-nav").addClass("scrolled");
+          } else {
+            $("#main-nav").removeClass("scrolled");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

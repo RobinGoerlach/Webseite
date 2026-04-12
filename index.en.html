@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Robin Görlach Resume Lebenslauf CV" />
+    <meta name="author" content="Robin Görlach" />
+    <title>Robin Görlach</title>
+    <link
+      href="./assets/css/style.css"
+      media="screen, projection"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/ico/favicon.png" />
+    <style>
+      /* Zusätzliche CSS für moderne Effekte */
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .hero-overlay {
+        background: rgba(0, 0, 0, 0.4); /* Overlay für besseren Kontrast */
+      }
+      nav {
+        background: rgba(0, 43, 91, 0.8);
+        transition: background 0.3s ease;
+      }
+      .scrolled {
+        background: rgba(0, 43, 91, 1);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full p-4 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <button type="button" class="text-white focus:outline-none">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="hidden md:flex space-x-4">
+          <a href="#top" class="text-white hover:text-blue-400">HOME</a>
+          <a href="#about-me" class="text-white hover:text-blue-400"
+            >ABOUT ME</a
+          >
+          <a href="#resume" class="text-white hover:text-blue-400">RESUME</a>
+          <a href="#projects" class="text-white hover:text-blue-400"
+            >PROJECTS</a
+          >
+          <a href="#contacts" class="text-white hover:text-blue-400"
+            >CONTACTS</a
+          >
+          <a
+            href="index.de.html"
+            class="text-white hover:text-blue-400"
+            title="English"
+          >
+            <img
+              src="assets/ico/de-flag-icon.png"
+              alt="DE"
+              class="w-6 h-6 inline"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white py-16" id="header">
+      <div class="container mx-auto flex flex-col items-center text-center">
+        <!-- Avatar with circular border -->
+        <div
+          class="avatar-container mb-8 flex justify-center items-center rounded-full border-8 border-gray-200 p-2 shadow-lg"
+        >
+          <!-- Profile Picture -->
+          <img
+            src="./assets/img/avatar.jpg"
+            alt="Profile Picture"
+            class="w-32 h-32 rounded-full"
+          />
+        </div>
+
+        <!-- Greeting and Introduction -->
+        <div>
+          <h1 class="text-4xl font-bold mb-4">Hello, I'm Robin Görlach</h1>
+          <p class="text-xl mb-4">
+            A passionate application developer with over 30 years of experience
+            in IT.
+          </p>
+
+          <!-- Button Group -->
+          <div class="flex justify-center space-x-4">
+            <a
+              href="#about-me"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Learn More About Me
+            </a>
+            <a
+              href="path/to/vCard.vcf"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Download vCard
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="bg-gray-100 py-16" id="skills">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">My Skills</h2>
+        <p class="mb-8">
+          Here are some of the technologies and skills I have mastered.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="skill-card p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+            <p>HTML, CSS, JavaScript, React, Tailwind CSS</p>
+          </div>
+          <div class="skill-card p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Backend Development</h3>
+            <p>Node.js, Express, MySQL, MongoDB</p>
+          </div>
+          <div class="skill-card p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Software Architecture</h3>
+            <p>Designing scalable and maintainable applications</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-blue-50 py-16" id="testimonials">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">Testimonials</h2>
+        <p class="mb-8">Discover what my clients have to say about my work.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="testimonial-card p-6 bg-white rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4">
+              "Robin exceeded our expectations and took our website to the next
+              level!"
+            </p>
+            <p class="text-blue-800 font-semibold">– Client A</p>
+          </div>
+          <div class="testimonial-card p-6 bg-white rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4">
+              "The collaboration was professional and efficient. Highly
+              recommended!"
+            </p>
+            <p class="text-blue-800 font-semibold">– Client B</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-white py-16" id="projects">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">Projects</h2>
+        <p class="mb-8">A selection of my personal projects.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card p-6">
+            <img
+              src="./assets/img/projects/project-item1.png"
+              alt="Azei"
+              class="rounded-t mb-4"
+            />
+            <h3 class="text-xl font-semibold">Azei</h3>
+            <p class="text-gray-700">
+              A plugin for Azureus, allowing control of Azureus with keywords
+              via email. Developed in Java.
+            </p>
+            <a
+              href="https://github.com/sonata82/Azei"
+              class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Source Code
+            </a>
+          </div>
+          <div class="card p-6">
+            <img
+              src="./assets/img/projects/project-item2.png"
+              alt="ShopShopViewer"
+              class="rounded-t mb-4"
+            />
+            <h3 class="text-xl font-semibold">ShopShopViewer</h3>
+            <p class="text-gray-700">
+              An Android app for displaying ShopShop files. Developed in Java
+              for Android, using the Dropbox API.
+            </p>
+            <a
+              href="https://github.com/sonata82/ShopShopViewer"
+              class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-blue-100 py-16" id="personal-motivation">
+      <div class="container mx-auto px-4 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">
+          Personal Motivation and Goals
+        </h2>
+        <p class="text-gray-800 mb-4">
+          The world of IT has fascinated me for decades – to me, it’s not just
+          technical work, but a chance to
+          <span class="font-semibold">tackle complex challenges</span> and
+          develop sustainable, useful solutions. I’m particularly drawn to the
+          possibility of creating real value through my work, whether by
+          building stable server environments or user-friendly applications.
+        </p>
+        <p class="text-gray-800 mb-4">
+          As a developer and administrator, I see it as my role not only to meet
+          technical requirements but also to foster
+          <span class="font-semibold">collaboration and knowledge sharing</span>
+          in projects. This belief drives me daily and motivates me to
+          continually improve my skills and share my knowledge with others.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white py-16" id="career-journey">
+      <div class="container mx-auto px-4 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">Career Journey</h2>
+        <p class="text-gray-800 mb-4">
+          My journey in IT began over three decades ago, and since then, I've
+          experienced a vast array of projects and technologies. With a
+          background in
+          <span class="font-semibold">mathematics and software development</span
+          >, I started in an era when IT was still in its infancy, allowing me
+          to witness firsthand the rapid evolution of technology.
+        </p>
+        <p class="text-gray-800 mb-4">
+          Over the course of my career, I’ve specialized in
+          <span class="font-semibold">scalable, robust software solutions</span>
+          and have always considered the use of open-source technologies
+          indispensable in my work. I'm especially proud of my ability to work
+          in
+          <span class="font-semibold">heterogeneous system environments</span>,
+          consistently maintaining high standards for security and efficiency.
+        </p>
+        <p class="text-gray-800">
+          Beyond technical expertise, I've learned how essential
+          <span class="font-semibold">agile methodologies</span> and
+          <span class="font-semibold">team-oriented work</span> are to
+          successfully complete complex projects. These experiences have taught
+          me to stay adaptable and continuously learn – skills that are crucial
+          in today’s IT landscape.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-blue-100 py-16" id="values-principles">
+      <div class="container mx-auto px-4 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">
+          Values and Principles
+        </h2>
+        <p class="text-gray-800 mb-4">
+          To me, IT is more than just technology – it's a philosophy. For over
+          three decades, I’ve witnessed how technologies influence and shape our
+          lives. Over time, <span class="font-semibold">open source</span> has
+          become a core belief of mine. I believe that knowledge and tools
+          should be accessible to all, fostering innovation and promoting a
+          fair, transparent digital world.
+        </p>
+        <p class="text-gray-800 mb-4">
+          As a <span class="font-semibold">Linux system administrator</span> and
+          <span class="font-semibold">full-stack developer</span>, I dedicate
+          myself to designing systems that are efficient, secure, and easy to
+          maintain. The security and reliability of the systems I oversee are
+          non-negotiable – they reflect my personal commitment to quality.
+        </p>
+        <p class="text-gray-800">
+          For me, sustainability and innovation go hand in hand: by choosing and
+          implementing scalable, resource-efficient technologies, I contribute
+          to a future-oriented and environmentally conscious IT landscape. In my
+          projects, I constantly strive for a balance between technical elegance
+          and practical usability, making the work experience as smooth as
+          possible for clients and users alike.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white py-16" id="technological-interests">
+      <div class="container mx-auto px-4 text-center md:text-left">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">
+          Technological Interests and Specializations
+        </h2>
+        <p class="text-gray-800 mb-4">
+          My technological focus is on
+          <span class="font-semibold">Linux administration</span> and the
+          development of
+          <span class="font-semibold">stable, scalable applications</span>. With
+          extensive knowledge of languages like C#, Java, and C++, and
+          experience with MySQL and Microsoft SQL, I understand the importance
+          of creating efficient and maintainable software solutions.
+        </p>
+        <p class="text-gray-800 mb-4">
+          Beyond development, I am actively involved in optimizing server
+          environments and networks. From virtual infrastructures with Proxmox
+          to modern backup solutions and OpenVPN expertise – I ensure that IT
+          infrastructures are not only efficient but also secure.
+        </p>
+        <p class="text-gray-800">
+          My philosophy in technology development is rooted in clean,
+          maintainable code and continuous learning. This is why I consistently
+          pursue further education, currently focusing on TypeScript, Docker,
+          and JavaScript. I recognize that software is never truly “finished,”
+          and regular refactoring is essential to maintain efficient and
+          well-structured solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-blue-100 py-16" id="contacts">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">Contact</h2>
+        <p class="mb-8">
+          If you'd like to get in touch with me, please use the form below:
+        </p>
+      </div>
+
+      <div class="container mx-auto px-4 md:flex md:space-x-8">
+        <!-- Contact Form -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <form class="space-y-4 bg-white p-6 rounded-lg shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name*"
+                class="p-2 border border-gray-300 rounded"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email*"
+                class="p-2 border border-gray-300 rounded"
+                required
+              />
+            </div>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              class="p-2 border border-gray-300 rounded w-full"
+            />
+            <textarea
+              name="message"
+              placeholder="Message*"
+              class="p-2 border border-gray-300 rounded w-full"
+              rows="5"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-700"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
+          <h3 class="text-2xl font-semibold text-blue-800 mb-4">
+            Contact Information
+          </h3>
+          <p class="mb-2"><strong>Robin Görlach</strong></p>
+          <p class="mb-2">Feldstraße 2</p>
+          <p class="mb-2">47533 Kleve</p>
+          <p class="mb-2">Germany</p>
+          <p class="mt-4 mb-2">
+            <strong>Email:</strong>
+            <a
+              href="mailto:info@rgo.co.uk"
+              class="text-blue-500 hover:text-blue-700"
+              >info@rgo.me.uk</a
+            >
+          </p>
+          <p class="mb-2">
+            <strong>Phone:</strong> <span>+49 123 456 789</span>
+          </p>
+          <p class="mt-8 text-sm text-gray-600">
+            I oppose the use or transfer of my data for advertising, market or
+            opinion research, and commercial use or disclosure (§ 28 (4) Federal
+            Data Protection Act).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+      <p class="text-sm">&copy; 2024 Robin Görlach</p>
+    </footer>
+
+    <!-- JavaScript (Scroll-Effekt und Navigation) -->
+    <script src="./assets/js/jquery-2.1.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Burger Menu Toggle
+        $(".fa-bars").on("click", function () {
+          $("#main-nav div.hidden").toggleClass("hidden");
+        });
+
+        // Scroll-Background für Navigation
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            $("#main-nav").addClass("scrolled");
+          } else {
+            $("#main-nav").removeClass("scrolled");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
