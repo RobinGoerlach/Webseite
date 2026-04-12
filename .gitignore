@@ -1,0 +1,52 @@
+# Betriebssystem-Dateien
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Umgebungsdateien / Geheimnisse
+.env
+.env.*
+!.env.example
+
+# Abhängigkeiten
+node_modules/
+vendor/
+
+# Build-Artefakte
+/dist/
+/build/
+/.cache/
+/.parcel-cache/
+/.next/
+/.nuxt/
+/.svelte-kit/
+coverage/
+
+# Temporäre Dateien
+/tmp/
+/temp/
+*.tmp
+
+# Lokale Datenbanken
+*.sqlite
+*.sqlite3
+*.db
+
+# Zertifikate / Schlüssel
+*.pem
+*.key
+*.crt
