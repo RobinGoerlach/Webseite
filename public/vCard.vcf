@@ -1,5 +1,8 @@
 BEGIN:VCARD
+VERSION:3.0
 N:Goerlach;Robin;;;
-EMAIL;INTERNET:info@rgoe.co.uk
-URL:rgoe.co.uk
+FN:Robin Goerlach
+EMAIL;TYPE=INTERNET:info@robin-goerlach.de
+URL:https://robin-goerlach.de
+ADR;TYPE=WORK:;;Darmstadt;;;Germany
 END:VCARD

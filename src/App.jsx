@@ -123,8 +123,8 @@ const content = {
     contactText:
       'Wenn Sie Kontakt aufnehmen möchten oder Unterstützung in Softwareentwicklung, Linux-Administration oder technischen Konzepten suchen, freue ich mich über eine Nachricht.',
     contactCards: [
-      'E-Mail: info@rgo.me.uk',
-      'Standort: Kleve, Deutschland',
+      'E-Mail: info@robin-goerlach.de',
+      'Standort: Darmstadt, Deutschland',
       'Schwerpunkte: Softwareentwicklung, Linux, Open Source',
     ],
     contactAction: 'E-Mail schreiben',
@@ -252,8 +252,8 @@ const content = {
     contactText:
       'If you would like to get in touch or are looking for support in software engineering, Linux administration, or technical concepts, I would be happy to hear from you.',
     contactCards: [
-      'Email: info@rgo.me.uk',
-      'Location: Kleve, Germany',
+      'Email: info@robin-goerlach.de',
+      'Location: Darmstadt, Germany',
       'Focus: software engineering, Linux, open source',
     ],
     contactAction: 'Send email',
@@ -456,7 +456,7 @@ function App() {
             ))}
           </div>
           <div className="mt-6">
-            <a href="mailto:info@rgo.me.uk" className="inline-flex rounded-full bg-slate-900 px-5 py-3 font-medium text-white transition hover:bg-slate-800">
+            <a href="mailto:info@robin-goerlach.de" className="inline-flex rounded-full bg-slate-900 px-5 py-3 font-medium text-white transition hover:bg-slate-800">
               {t.contactAction}
             </a>
           </div>
